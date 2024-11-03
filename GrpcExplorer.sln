@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExplorer.Server", "GrpcExplorer.Server\GrpcExplorer.Server.csproj", "{BE7D8772-DD25-4BE2-B60B-28A71AC14F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExplorer.Client", "GrpcExplorer.Client\GrpcExplorer.Client.csproj", "{0DF187C1-1F3A-4A6E-83C5-B860B932A68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExplorer.Contracts", "GrpcExplorer.Contracts\GrpcExplorer.Contracts.csproj", "{64D9F3B6-DEE9-4D3C-BD72-907B9E559F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExplorer.OpenTelemetry", "GrpcExplorer.OpenTelemetry\GrpcExplorer.OpenTelemetry.csproj", "{1BAAE9E1-E403-4A69-812A-27A4126C5374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcExplorer.BlogService", "GrpcExplorer.BlogService\GrpcExplorer.BlogService.csproj", "{D1241411-1B6A-4F85-9C66-7207A5A5E911}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Etc", "Etc", "{906C7E54-ABF3-402F-8F99-741F93759240}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE7D8772-DD25-4BE2-B60B-28A71AC14F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7D8772-DD25-4BE2-B60B-28A71AC14F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7D8772-DD25-4BE2-B60B-28A71AC14F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7D8772-DD25-4BE2-B60B-28A71AC14F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF187C1-1F3A-4A6E-83C5-B860B932A68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF187C1-1F3A-4A6E-83C5-B860B932A68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF187C1-1F3A-4A6E-83C5-B860B932A68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF187C1-1F3A-4A6E-83C5-B860B932A68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D9F3B6-DEE9-4D3C-BD72-907B9E559F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D9F3B6-DEE9-4D3C-BD72-907B9E559F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D9F3B6-DEE9-4D3C-BD72-907B9E559F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D9F3B6-DEE9-4D3C-BD72-907B9E559F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAAE9E1-E403-4A69-812A-27A4126C5374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAAE9E1-E403-4A69-812A-27A4126C5374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAAE9E1-E403-4A69-812A-27A4126C5374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAAE9E1-E403-4A69-812A-27A4126C5374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1241411-1B6A-4F85-9C66-7207A5A5E911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1241411-1B6A-4F85-9C66-7207A5A5E911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1241411-1B6A-4F85-9C66-7207A5A5E911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1241411-1B6A-4F85-9C66-7207A5A5E911}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

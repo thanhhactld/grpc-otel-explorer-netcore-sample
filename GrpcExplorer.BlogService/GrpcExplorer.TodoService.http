@@ -1,0 +1,6 @@
+@GrpcExplorer.TodoService_HostAddress = http://localhost:5217
+
+GET {{GrpcExplorer.TodoService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

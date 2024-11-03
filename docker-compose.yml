@@ -1,0 +1,22 @@
+services:
+  database:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: blog_db_password
+      POSTGRES_USER: blog_db_user
+      POSTGRES_DB: blog_service
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686" # Jaeger UI
+      - "4317:4317" # OpenTelemetry HTTP
+      - "4318:4318" # OpenTelemetry gRPC
+    environment:
+      - COLLECTOR_ZIPKIN_HTTP_PORT=9411
+volumes:
+  postgres_data:
+  

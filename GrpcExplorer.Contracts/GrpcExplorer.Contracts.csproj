@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>GrpcExplorer.Contracts</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Protobuf Include="Protos\greet.proto" Services="Server, Client" />
+      <Protobuf Include="Protos\blog.proto" Services="Server, Client" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Grpc.Tools" Version="2.57.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    </ItemGroup>
+
+</Project>

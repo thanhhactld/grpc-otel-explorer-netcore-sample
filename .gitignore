@@ -1,0 +1,4 @@
+bin/
+obj/
+.idea/
+GrpcExplorer.sln.DotSettings.user

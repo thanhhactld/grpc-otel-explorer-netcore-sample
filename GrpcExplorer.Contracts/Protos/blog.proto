@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option csharp_namespace = "BlogContracts";
+
+package blogging;
+
+// The greeting service definition.
+service  BlogGrpc {
+  // Sends a greeting
+  rpc Create(CreateRequest) returns (BlogItemResponse);
+
+  rpc Update(UpdateRequest) returns (BlogItemResponse);
+
+  rpc GetBlogList(BlogListFilter) returns (BlogPagedResponse);
+}
+
+
+message CreateRequest {
+  string url = 1;
+}
+
+
+message UpdateRequest {
+  int32 id = 1;
+  string url = 2;
+}
+
+message BlogListFilter {
+  optional string key = 1;
+  optional int32 offset = 2;
+  optional int32 limit = 3;
+}
+
+message BlogItemResponse {
+  int32 id = 1;
+  string url = 2;
+}
+
+message BlogPagedResponse {
+  int32 totalCount = 1;
+  repeated BlogItemResponse blogs = 2;
+}
